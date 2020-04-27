@@ -1,0 +1,16 @@
+.barChart-container{
+    margin-top : 10px;
+    margin-left: 10px;
+    width: 500px;
+    height: 335px;
+    background: #f5f5f5;
+    border: 2px solid #f5f5f5;
+}
+
+.barChart-container span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
