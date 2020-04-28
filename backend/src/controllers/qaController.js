@@ -33,13 +33,13 @@ module.exports = {
     },
 
     async DiagnostcCategories(req,res){
-        const semSupeita = await QA.where({'diagnostic' : {$lte : 4.2} }).countDocuments();
-        const baixaSupeita = await QA.where({$and :[{'diagnostic' : {$lt : 6.9}},{'diagnostic' : {$gt : 4.2}}]}).countDocuments();
-        const altaSupeita = await QA.where({'diagnostic' : {$gt : 6.9} }).countDocuments();
+        const semSuspeita = await QA.where({'diagnostic' : {$lte : 4.2} }).countDocuments();
+        const baixaSuspeita = await QA.where({$and :[{'diagnostic' : {$lt : 6.9}},{'diagnostic' : {$gt : 4.2}}]}).countDocuments();
+        const altaSuspeita = await QA.where({'diagnostic' : {$gt : 6.9} }).countDocuments();
         res.json({
-            semSupeita,
-            baixaSupeita,
-            altaSupeita
+            semSuspeita,
+            baixaSuspeita,
+            altaSuspeita
         });
     }
 

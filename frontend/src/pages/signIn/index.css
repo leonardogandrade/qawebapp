@@ -1,0 +1,32 @@
+.main-containerSignIn{
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+}
+.main-containerSignIn form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f5f5f5;
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+    background: #f5f5f5;
+}
+
+.main-containerSignIn input{
+    width: 200px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 3px;
+} 
+
+.main-containerSignIn button{
+    margin-top: 5px;
+    height: 40px;
+    width: 200px;
+    color: #ffffff;
+    background: #0EA6FF;
+    font-weight: bold;
+}

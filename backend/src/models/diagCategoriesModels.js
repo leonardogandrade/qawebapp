@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 
 const DiagCatSchema = mongoose.Schema({
-    NaoSupeito : Number,
+    semSuspeito : Number,
     baixaSuspeita : Number,
-    altaSupeita : Number,
+    altaSuspeita : Number,
 },{
     timestamps : true
 });

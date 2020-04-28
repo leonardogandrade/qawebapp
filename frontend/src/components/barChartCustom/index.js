@@ -20,7 +20,7 @@ export default class BarChartCustom extends Component{
             <div className='barChart-container'>
               <span>Total de pessoas por sintoma</span>
                 <BarChart
-                    width={500}
+                    width={900}
                     height={300}
                     data={this.state.data}
                     margin={{

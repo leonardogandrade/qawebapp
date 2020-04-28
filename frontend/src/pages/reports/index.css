@@ -1,5 +1,4 @@
-.charts{
+.charts-line{
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;    
 }

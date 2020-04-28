@@ -1,0 +1,22 @@
+.main-diagnosticClassBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 466px;
+    padding: 10px;
+    height: 110px;
+    margin-top : 10px;
+    margin-left: 10px;
+    border: 1px solid #F5F5F5;
+    background: #F5F5F5;
+}
+
+.main-diagnosticClassBox h1{
+    font-size: 65px;
+    padding-top: 50px;
+}
+
+.main-diagnosticClassBox h4{
+    font-size: 25px;
+    color: rgb(168, 159, 159);
+}
