@@ -41,6 +41,10 @@ module.exports = {
             baixaSuspeita,
             altaSuspeita
         });
+    },
+    async result(req,res){
+        const response = await QA.findById(req.params.id);
+        res.json(response);
     }
 
 }

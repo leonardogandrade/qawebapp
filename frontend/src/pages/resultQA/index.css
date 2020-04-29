@@ -1,0 +1,56 @@
+.main-containerResultQA{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.main-containerResultQA .containerQA-box{
+    width: 600px;
+    height: 400px;
+    background: #f5f5f5;
+    text-align: right;
+}
+
+.main-containerResultQA .containerQA-box span{
+    font-size: 18px;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+.main-containerResultQA .containerQA-box .containerQA-header{
+    display: flex;
+    background: rgb(234, 234, 236);
+    height: 50px;
+    align-items: center;
+}
+
+.main-containerResultQA .containerQA-box .containerQA-header h3{
+    justify-content: center;
+    align-items: center;
+    color: #3F3D56;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.main-containerResultQA .containerQA-box .containerQA-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.main-containerResultQA .containerQA-box .containerQA-line img{
+    width: 360px;
+    margin-left: 10px;
+    margin-top: -20px;
+    opacity: 0.6;
+}
+
+.main-containerResultQA .containerQA-box .containerQA-line button{
+    width: 140px;
+    height: 40px;
+    border-style: none;
+    background: #00BFA6;
+    color : #FFFFFF;
+    margin-top: 190px;
+    margin-right: 40px;
+}

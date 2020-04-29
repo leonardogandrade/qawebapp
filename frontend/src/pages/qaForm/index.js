@@ -15,7 +15,7 @@ export default class QAForm extends Component{
 
     handleOnSubmit = async event => {
         event.preventDefault();
-        await api.post('/',{
+        const response = await api.post('/',{
             matricula : this.state.matricula,
             luvas : this.state.luvas,
             tosse : this.state.tosse,
@@ -23,8 +23,7 @@ export default class QAForm extends Component{
             mascara : this.state.mascara,
             respiracao : this.state.respiracao
         })
-        //console.log(JSON.stringify(this.state));
-        this.props.history.push('/checkAnimation');
+        this.props.history.push(`/checkAnimation/${response.data._id}`);
     }
 
     handleOnChange = event =>{
@@ -63,8 +62,8 @@ export default class QAForm extends Component{
                                     value={this.state.luvas}
                                     onChange={this.handleOnChange}>
                                         <option></option>
-                                        <option value={1}>SIM</option>
-                                        <option value={0}>NÃO</option>
+                                        <option value={0}>SIM</option>
+                                        <option value={1}>NÃO</option>
                                 </select>
                             </div>  
     
@@ -76,8 +75,8 @@ export default class QAForm extends Component{
                                     value={this.state.mascara}
                                     onChange={this.handleOnChange}>
                                         <option></option>
-                                        <option value={1}>SIM</option>
-                                        <option value={0}>NÃO</option>
+                                        <option value={0}>SIM</option>
+                                        <option value={1}>NÃO</option>
                                 </select>
                             </div>  
                             

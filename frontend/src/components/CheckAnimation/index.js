@@ -6,8 +6,10 @@ import './index.css';
 export default class CheckAnimation extends Component{
     
     componentDidMount(){
+        const {id} = this.props.match.params;
+        console.log(id);
         setTimeout(function(){
-            this.props.history.push('/');
+            this.props.history.push(`/result/${id}`);
         }.bind(this),1400)
     }
     render(){
