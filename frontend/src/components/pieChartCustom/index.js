@@ -48,7 +48,7 @@ export default class PieChartCustom extends Component{
                     cy={150}
                     labelLine={false}
                     label={renderCustomizedLabel}
-                    outerRadius={90}
+                    outerRadius={120}
                     fill="#8884d8"
                     dataKey="value"
                     >

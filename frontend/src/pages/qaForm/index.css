@@ -20,16 +20,15 @@
 
 .main-container .box-container{
     width: 850px;
-    height: 340px;
+    height: auto;
+    max-width: 110%;
     border-radius: 10px;
     background: #074468;
     position: absolute;
     z-index: 1;
     opacity: 0.9;
     margin-top: 145px;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 10px;
+    padding : 20px;
 }
 
 .main-container .box-container form button{

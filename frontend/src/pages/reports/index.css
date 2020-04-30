@@ -1,4 +1,17 @@
+.main-reportsContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height : auto;
+}
+
+.main-reportsContainer Header{
+    width: 100%;
+    max-width: 100%;
+}
+
 .charts-line{
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
+    max-width: 100%;    
 }

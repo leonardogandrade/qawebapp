@@ -13,7 +13,7 @@ function Diagnostc(tosse,febre,luvas,mascara,respiracao){
 
 module.exports = {
     async store(req,res){
-       const {matricula,tosse,febre,luvas,mascara,respiracao} = await req.body;
+       const {matricula,tosse,febre,luvas,mascara,respiracao,coords} = await req.body;
        const payload = await QA.create({
             matricula,
             tosse,
@@ -21,6 +21,7 @@ module.exports = {
             luvas,
             mascara,
             respiracao,
+            coords,
             diagnostic : Diagnostc(tosse,febre,luvas,mascara,respiracao)
        });
        console.log(payload);

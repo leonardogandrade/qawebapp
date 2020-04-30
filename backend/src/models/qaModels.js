@@ -28,6 +28,11 @@ const qaSchema = mongoose.Schema({
     diagnostic : {
         type : Number,
         required : false,
+    },
+
+    coords : {
+        type : Object,
+        required : false,
     }
 },{
     timestamps : true
